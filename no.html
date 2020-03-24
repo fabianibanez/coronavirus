@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>App que te avisa si puedes quebrar la cuarentena</title>
+
+	<style>
+
+		* {
+			margin: 0;
+			padding: 0;
+			border: none;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-size: 15px;
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+			/*-webkit-animation: nop .5s linear infinite;
+			-moz-animation: nop .5s linear infinite;
+			-ms-animation: nop .5s linear infinite;
+			animation: nop .5s linear infinite;*/
+		}
+		
+		section.nocontent {
+			width: 100%;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			-ms-align-items: center;
+			align-items: center;
+
+			background-image: url('img/v1.png'), url('img/v2.png'), url('img/v3.png');
+            -webkit-animation: snow 1000s linear infinite;
+            -moz-animation: snow 1000s linear infinite;
+            -ms-animation: snow 1000s linear infinite;
+            animation: snow 1000s linear infinite;
+            -webkit-transform: translate3d(0,0,0);
+            -moz-transform: translate3d(0,0,0);
+            -ms-transform: translate3d(0,0,0);
+            -o-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+		}
+
+		.nocontent__container {
+			display: flex;
+			justify-content: center;
+			margin: 0 auto;
+		}
+
+		h1.nocontent__title {
+			font-size: 9rem;
+			font-weight: 100;
+			text-transform: uppercase;
+			/*-webkit-animation: titulo .5s linear infinite;
+			-moz-animation: titulo .5s linear infinite;
+			-ms-animation: titulo .5s linear infinite;
+			animation: titulo .5s linear infinite;*/
+		}
+
+		section.button {
+			width: 100%;
+			padding: 3rem 0;
+			position: absolute;
+			bottom: 0;
+			display: flex;
+			justify-content: center;
+		}
+
+		input[type=button] {
+			width: 300px;
+			padding: 1rem;
+			border-radius: 3px;
+			font-style: 1rem;
+			color: #fff;
+			background: #FFC107;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+		}
+
+		input[type=button]:focus {
+			outline: none;
+		}
+
+		@keyframes nop {
+			from {background: #fff;}
+			to {background: #000; }          
+        }
+        @-moz-keyframes nop {
+			from {background: #fff;}
+			to {background: #000; }         
+        }
+        @-webkit-keyframes nop {
+			from {background: #fff;}
+			to {background: #000; }         
+        }
+        @-ms-keyframes nop {
+			from {background: #fff;}
+			to {background: #000; }         
+        }
+
+        @keyframes titulo {
+			from {color: #000;}
+			to {color: #fff; }          
+        }
+        @-moz-keyframes titulo {
+			from {color: #000;}
+			to {color: #fff; }         
+        }
+        @-webkit-keyframes titulo {
+			from {color: #000;}
+			to {color: #fff; }         
+        }
+        @-ms-keyframes titulo {
+			from {color: #000;}
+			to {color: #fff; }         
+        }
+
+        /*fondo*/
+
+        @keyframes snow {
+            0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+            100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
+        }
+        @-moz-keyframes snow {
+            0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+            100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
+        }
+        @-webkit-keyframes snow {
+            0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+            100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
+        }
+        @-ms-keyframes snow {
+            0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+            100% {background-position: 50000px 50000px, 10000px 20000px, -10000px 15000px;}          
+        }
+
+	</style>
+</head>
+<body>
+
+	<section class="nocontent">
+		<div class="nocontent__container">
+			<h1 class="nocontent__title">Nop</h1>
+		</div>
+	</section>
+
+	<section class="button">
+		<input type="button" value="y ahora?" onclick="javascript:window.location.reload();"/>
+	</section>
+	
+</body>
+</html>
